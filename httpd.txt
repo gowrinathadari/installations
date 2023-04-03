@@ -1,0 +1,8 @@
+#To Intsall HTTPD In centos server
+ sudo yum install -y httpd
+
+#to enable HTTPD
+sudo systemctl enabel httpd
+
+# To start httpd
+sudo systemctl start httpd
