@@ -1,0 +1,22 @@
+#To Install Nginx server
+
+#Nginx works on port :80
+
+1. sudo yum upgrade -y
+2. add nginx yum reposirtory by creating a file using vi editior
+
+# vi //etc/yum.repos.d/nginx.repo
+#paste :-
+     
+[nginx]
+name=nginx repo
+baseurl=https://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+ 
+ #After completion of adding save
+ #then execute below commands
+ 
+ 1.sudo yum install -y nginx
+ 2.sudo systemctl enable nginx
+ 3.sudo syatemctl start nginx
