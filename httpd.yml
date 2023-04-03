@@ -1,0 +1,28 @@
+
+#To Install HTTPD in yaml format by using ANSIBLE
+
+
+---
+- name: Install HTTPD
+  hosts: localhost
+  become: yes
+
+  tasks:
+
+    - name: Install HTTPD
+      yum:
+        name: httpd
+        state: present
+
+    - name: Enable HTTPD
+      service:
+        name: httpd
+        enabled: true
+
+    - name: start HTTPD
+      service:
+        name: httpd
+        state: started
+
+
+...
