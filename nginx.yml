@@ -11,7 +11,7 @@
       content: |
         [nginx]
         name=nginx repo
-        baseurl=ttps://nginx.org/packages/centos/$releasever/$basearch/
+        baseurl=https://nginx.org/packages/centos/$releasever/$basearch/
         gpgcheck=0
         enabled=1
       dest: /etc/yum.repos.d/nginx.repo
